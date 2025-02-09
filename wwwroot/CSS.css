@@ -1,0 +1,174 @@
+﻿/*---------------------------------------------------------------------------------TOP BAR--------------------------------------------------------------------------------------*/
+.top-bar {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+}
+.left-section img {
+    width: 85px;
+    height: 100px;
+    }
+.right-section {
+    display: flex;
+    gap: 10px;
+}
+#ibutton {
+    width: 10vw;
+    height: 7vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+.button {
+    padding: 8px 15px;
+    background-color: #8a2222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Cambria;
+    border: 1px solid #ccc;
+}
+.button:hover {
+    background-color: #5c0000;
+}
+/*---------------------------------------------------------------------------------INDEX PAGE--------------------------------------------------------------------------------------*/
+.backgroundIndex {
+    background-image: url('images/indexPozadina.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+#Title {
+    color: white;
+    font-weight: bold;
+    font-family: Cambria;
+    font-size: 9vh;
+}
+.Main {
+    display: grid;
+    position: relative;
+    justify-content: center;
+    width: 100vw;
+}
+.forma {
+    background-color: rgba(92, 0, 0,0.75);
+    font-size: 2.5vh;
+    color: white;
+    font-family: Cambria;
+    display: block;
+    width: 30vw;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.forma form {
+    font-size: 2vh;
+}
+.forma button {
+    width: 7vw;
+    height: 5vh;
+    font-size: 2vh;
+}
+#registrationForm {
+    padding: 20px;
+}
+#loginForm {
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.grid {
+    grid-area: 1 / 1; 
+    width: 100%;
+    height: 100%; 
+}
+/*---------------------------------------------------------------------------------ADMIN PAGE--------------------------------------------------------------------------------------*/
+.container {
+    display: flex;
+    flex-direction: column; 
+}
+.top-section {
+    display: flex; 
+    justify-content: space-between; 
+}
+.left-side,
+.right-side {
+    flex: 1; 
+    padding: 20px; 
+}
+.below {
+    padding: 20px;
+    display: flex; 
+    align-items: center; 
+}
+.below h1 {
+    margin-right: 20px; 
+}
+.below button {
+    margin-right: 10px; 
+}
+.below ul {
+    margin-top: 10px; 
+}
+ul {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    height: 50vh;
+    overflow-y: auto;
+}
+ul li {
+    background-color: #690d0d;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10px 10px; 
+    justify-content: space-between;
+    flex-direction: row;
+}
+ul li button {
+    display: flow;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 10px; 
+}
+.updatebttn {
+    margin-right: -2vw;
+}
+#secret-santa-pairs {
+    width: 30vw;
+    height: 30vh;
+    overflow-y: auto;
+}
+#PairOut {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+}
+#santa {
+    position: absolute;
+    margin: -50vh 0 0 70vw;
+}

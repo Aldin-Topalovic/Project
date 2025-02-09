@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="JS.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <title>HomePage</title>
+</head>
+<body class="backgroundIndex" onload="getAllUsers()">
+    <div class="top-bar">
+        <div class="left-section">
+            <img src="images/ss.png" alt="Secret Santa Logo">
+            <img src="images/secretsanta.png" style="width:20vw" />
+        </div>
+        <div class="right-section">
+            <button id="ibutton" class="button" onclick="showRegisterForm()">Sign In</button>
+            <button id="ibutton" class="button" onclick="showLoginForm()">Log In</button>
+        </div>
+    </div>
+
+    <main class="Main">
+        <div class="grid">
+            <h1 id="Title">Welcome to Secret Santa Homepage</h1>
+        </div>
+        <br>
+        <div id="form" class="forma" style="display: none; margin: -50px auto;">
+            <div id="registrationForm" >
+                <h2>Registration</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">First name:</label>
+                        <input type="text" id="firstName" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName" class="form-label">Last name:</label>
+                        <input type="text" id="lastName" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" id="password" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpassword" class="form-label">Confirm Password:</label>
+                        <input type="password" id="cpassword" class="form-input" style="margin: 0px 0px 20px;">
+                    </div>
+                    <button id="registerButton" type="button" class="button" onclick="signIn()" style="margin: 0px 3vw;">Sign In</button>
+                    <button type="button" class="button" onclick="hideForm()" style="margin: 0px 3vw;">Close</button>
+                </form>
+            </div>
+
+            <div id="loginForm" style="display:none">
+                <h2>Log In</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="lemail" class="form-label">Email:</label>
+                        <input type="text" id="lemail" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="lpassword" class="form-label">Password:</label>
+                        <input type="password" id="lpassword" class="form-input">
+                    </div>
+                    <button type="button" class="button" onclick="Login()" style="margin: 0px 3vw;">Log In</button>
+                    <button type="button" class="button" onclick="hideForm()" style="margin: 0px 3vw;">Close</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

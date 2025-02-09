@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS.css" />
+    <script src="JS.js"></script>
+    <title>Admin HomePage</title>
+</head>
+<body onload="loadUsers()" style=" background-color: rgb(92, 0, 0); color: white;">
+    <div class="top-bar">
+        <div class="left-section">
+            <img src="images/ss.png" width="85" height="100" alt="Secret Santa Logo">
+            <a href="index.html" class="ahref"><img src="images/secretsanta.png" style="width:20vw" /></a>
+        </div>
+        <div class="right-section">
+            <button id="ibutton" class="button" onclick="Logout()">Log Out</button>
+        </div>
+    </div>
+    <div class="containter" >
+        <div class="top-section">
+            <div class="left-side">
+                <div class="forma" style="padding: 20px;">
+                <h1>Enter employee</h1>
+                <br />
+                <div>
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label><br>
+                        <input type="text" id="firstName" name="firstName" class="form-input"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label><br>
+                        <input type="text" id="lastName" name="lastName" class="form-input"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" class="form-input"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label><br>
+                        <input type="text" id="password" name="password" class="form-input"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role ID:</label><br>
+                        <input type="text" id="role" name="roleID" placeholder="0 for normal user, 1 for admin" class="form-input"><br>
+                    </div>
+                        <button class="button" style=" width: 8vw; font-size: 1.5vh;margin: 0px 3vw;" onclick="addNewUser()">Add Employee</button>
+                        <button class="button" style="width: 8vw; font-size: 1.5vh; margin: 0px 3vw; display:none ; " onclick="saveChangedUser()" >Save Changes</button>
+                </div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <h1>Employee list</h1><br />
+                <ul id="userList"></ul>
+            </div>
+        </div>
+        <div class="below">
+            <div></div>
+            <h1>Secret santa list</h1>
+            <button class="button" onclick="generatePairs()">Generate SS pairs</button>
+            <button class="button" onclick="deleteAllPairs()">Delete all pairs</button>
+        </div>
+            <ul id="secret-santa-pairs"></ul>
+            <img id="santa" src="images/santa.png" />
+        </div>
+    </div>
+</body>
+</html>
