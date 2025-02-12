@@ -1,0 +1,11 @@
+Potrebni programi:Visual Studio Community 2022, SQL Server Express i SSMS (SQL Server Management system). 
+Potrebni dodaci: .net core api, baza podataka. 
+Za konektovanje na bazu podataka potrebno je unijeti slijedeće podatke: User Name : “.\SQLEXPRESS”. 
+Potrebni NuGet paketi:
+•	Swashbuckle,
+•	ComponentModel.annotations,
+•	EntityFrameworkCore.Design,
+•	EntityFrameworkCore.Tools i
+•	EntityFrameworkCore.SqlServer.
+Na kraju, za povezivanje baze podataka i projekta, u Package Manager Console je potrebno unijeti slijedeću komandu: 
+‘Scaffold-DbContext „Server=.\SQLEXPRESS;Database=SecretSanta;Trusted_Connection=True;TrustServerCertificate=True“ Microsoft.EntitiyFrameworkCore.SqlServer -OutputDir Models`.
